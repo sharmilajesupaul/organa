@@ -35,7 +35,7 @@ gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem 'devise'
 gem 'simplecov'
-gem 'codecov', :require => false, :group => :test
+gem "codeclimate-test-reporter", "~> 1.0.0"
 gem 'pry'
 
 group :development, :test do
