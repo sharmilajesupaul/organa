@@ -1,0 +1,17 @@
+language: ruby
+
+rvm:
+  - 2.3.3
+
+services:
+  - mysql
+
+before_install:
+  - mysql -e 'CREATE DATABASE organa_test;'
+
+addons:
+  code_climate:
+    repo_token: 97ece25f971c4be300a71982dd052b8f5c0d7c635684d7d808a944e3c308a218
+
+after_success:
+  - bundle exec codeclimate-test-reporter

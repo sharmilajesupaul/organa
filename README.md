@@ -1,24 +1,4 @@
-# README
+Organa
+========
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[![Build Status](https://travis-ci.org/sharmilajesupaul/organa.svg?branch=master)](https://travis-ci.org/sharmilajesupaul/organa) [![Test Coverage](https://codeclimate.com/github/sharmilajesupaul/organa/badges/coverage.svg)](https://codeclimate.com/github/sharmilajesupaul/organa/coverage) [![Code Climate](https://codeclimate.com/github/sharmilajesupaul/organa/badges/gpa.svg)](https://codeclimate.com/github/sharmilajesupaul/organa)
