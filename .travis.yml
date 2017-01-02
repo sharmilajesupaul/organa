@@ -1,6 +1,12 @@
 language: ruby
+
 rvm:
-  - 2.2.6
   - 2.3.3
   - 2.4.0
   - ruby-head
+
+services:
+  - mysql
+
+before_install:
+  - mysql -e 'CREATE DATABASE organa_test;'
