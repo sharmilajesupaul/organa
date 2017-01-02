@@ -38,6 +38,8 @@ gem 'factory_girl'
 gem 'simplecov'
 gem "codeclimate-test-reporter", "~> 1.0.0"
 gem 'pry'
+gem 'faker'
+gem 'haml'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

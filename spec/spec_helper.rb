@@ -5,10 +5,10 @@ require 'rubygems'
 ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
-# require 'support/controller_helpers'
+require 'support/factory_girl'
 
 OmniAuth.config.test_mode = true
-omniauth_hash = { 'provider' => 'google_oauth2',
+omniauth_hash = { 'provider' => 'google',
                   'uid' => '12345',
                   'info' => {
                       'first_name' => 'test',
@@ -17,7 +17,7 @@ omniauth_hash = { 'provider' => 'google_oauth2',
                   }
 }
 
-OmniAuth.config.add_mock(:google_oauth2, omniauth_hash)
+OmniAuth.config.add_mock(:google, omniauth_hash)
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
@@ -53,6 +53,5 @@ RSpec.configure do |config|
   config.order = "random"
   config.include Devise::Test::ControllerHelpers, type: :controller
   config.include Devise::Test::ControllerHelpers, type: :view
-  config.include ControllerHelpers, :type => :controller
  
 end
